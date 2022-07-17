@@ -1,43 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="img/einstein.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="container mx-auto">
+
+    <div class="text-center text-5xl font-extrabold py-2">
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+        Movimiento Rectilíneo Uniforme MRU
+      </span>
+    </div>
+    <div class=" bg-clip-border p-6 bg-violet-600 border-4 border-violet-300 border-dashed">
+      <img class="drop-shadow-lg max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+        src="img/MRU3.png">
+    </div>
+    <div class="text-center text-2xl font-extrabold py-2">
+      <span class="text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-teal-500 py-2">
+        Para entender el concepto de <b>MRU</b> es necesario definir una serie de términos con anterioridad
+      </span>
+    </div>
+    <div
+      class="bg-clip-border p-6 bg-gradient-to-r from-pink-500 to-violet-500 border-4 border-violet-300 border-dashed">
+      <div class="columns-2  ">
+        <p class="text-white text-justify  ">
+          La <b>posición</b> la posición o vector de posición de un cuerpo respecto a un sistema de
+          referencia
+          se define como el vector que une el lugar ocupado por el cuerpo con el origen del sistema de
+          referencia. La unidad de medida en el Sistema Internacional es el metro [m].
+          El <b>desplazamiento</b> es el cambio de posición de un cuerpo entre dos instantes o tiempos
+          bien
+          definidos.
+          La <b>velocidad</b> es la capacidad de ocupar espacios con todo nuestro cuerpo o con cualquiera
+          de
+          sus
+          segmentos en el menor tiempo posible.
+          Ahora bien, se dice que el <b>movimiento rectilíneo uniforme (MRU)</b> es el movimiento que
+          describe
+          un cuerpo o partícula a través de una línea recta a velocidad constante. Es decir:
+        </p>
+        <img class="content-end w drop-shadow-lg  bg-white rounded-xl shadow-md overflow-hidden  px-20      "
+          src="img/MRU2.jpg">
+      </div>
+      <br>
+
+      <!-- component -->
+      <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table class="min-w-full text-center mx-auto">
+                <thead class="border-b">
+                  <tr>
+                    <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                      Número
+                    </th>
+                    <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                      Fórmula
+                    </th>
+                    <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                      Observación
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr class="border-b bg-purple-100 border-purple-200">
+                    <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                      Primero
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      d = v*t
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Cálculo de la distancia en cualquier tiempo
+                    </td>
+                  </tr>
+
+                  <tr class="border-b bg-red-100 border-red-200">
+                    <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                      Segundo
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      v = d/t
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Cálculo de la velocidad en cualquier tiempo
+                    </td>
+                  </tr>
+
+                  <tr class="border-b bg-indigo-100 border-indigo-200">
+                    <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                      Tercero
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      t = d/v
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Calculo del tiempo demorado en llegar a determinada distancia
+                    </td>
+                  </tr>
+                  <tr class="border-b bg-purple-100 border-purple-200">
+                    <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                      Cuarto
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      x = x0 + v*t
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Calculo de la posicion dependiendo posicion inicial
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </br>
+
+      <div class=" container items-center justify-center px-20">
+        <div class=" grid grid-cols-12 gap-4 gap-y-10 max-w-6xl px-6">
+          <!-- Video 1 -->
+          <div class="col-span-12 sm:col-span-6 md:col-span-3">
+            <card class="flex w-full flex flex-col">
+              <div class="relative">
+
+                <!-- Image Video -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/59/300/200" class="w-96 h-auto" />
+                </a>
+
+                <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">1:15
+                </p>
+              </div>
+
+              <div class="flex flex-row mt-2 gap-2">
+
+                <!-- Profile Picture -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/1/40/40" class="rounded-full max-h-10 max-w-10" />
+                </a>
+
+                <!-- Description -->
+                <div clas="flex flex-col">
+                  <a href="#">
+                    <p class="text-gray-100 text-sm font-semibold">Learn CSS Box Model in 8
+                      Minutes</p>
+                  </a>
+                  <a class="text-white text-xs mt-2 hover:text-gray-100" href="#"> Web Dev
+                    Simplified </a>
+                  <p class="text-white text-xs mt-1">241K views . 3 years ago</p>
+                </div>
+
+              </div>
+            </card>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="col-span-12 sm:col-span-6 md:col-span-3">
+            <card class="w-full flex flex-col">
+              <div class="relative">
+
+                <!-- Image Video -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/60/300/200" class="w-96 h-auto" />
+                </a>
+
+                <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">1:15
+                </p>
+              </div>
+
+              <div class="flex flex-row mt-2 gap-2">
+
+                <!-- Profile Picture -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/4/40/40" class="rounded-full max-h-10 max-w-10" />
+                </a>
+
+                <!-- Description -->
+                <div clas="flex flex-col">
+                  <a href="#">
+                    <p class="text-gray-100 text-sm font-semibold">Learn CSS Box Model in 8
+                      Minutes</p>
+                  </a>
+                  <a class="text-white text-xs mt-2 hover:text-gray-100" href="#"> Web Dev
+                    Simplified </a>
+                  <p class="text-white text-xs mt-1">241K views . 3 years ago</p>
+                </div>
+
+              </div>
+            </card>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="col-span-12 sm:col-span-6 md:col-span-3">
+            <card class="w-full flex flex-col">
+              <div class="relative">
+
+                <!-- Image Video -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/22/300/200" class="w-96 h-auto" />
+                </a>
+
+                <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">1:15
+                </p>
+              </div>
+
+              <div class="flex flex-row mt-2 gap-2">
+
+                <!-- Profile Picture -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/88/40/40" class="rounded-full max-h-10 max-w-10" />
+                </a>
+
+                <!-- Description -->
+                <div clas="flex flex-col">
+                  <a href="#">
+                    <p class="text-gray-100 text-sm font-semibold">Learn CSS Box Model in 8
+                      Minutes</p>
+                  </a>
+                  <a class="text-white text-xs mt-2 hover:text-gray-100" href="#"> Web Dev
+                    Simplified </a>
+                  <p class="text-white text-xs mt-1">241K views . 3 years ago</p>
+                </div>
+
+              </div>
+            </card>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="col-span-12 sm:col-span-6 md:col-span-3">
+            <card class="w-full flex flex-col">
+              <div class="relative">
+
+                <!-- Image Video -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/90/300/200" class="w-96 h-auto" />
+                </a>
+
+                <p class="absolute right-2 bottom-2 bg-gray-900 text-gray-100 text-xs px-1 py">1:15
+                </p>
+              </div>
+
+              <div class="flex flex-row mt-2 gap-2">
+
+                <!-- Profile Picture -->
+                <a href="#">
+                  <img src="https://picsum.photos/seed/57/40/40" class="rounded-full max-h-10 max-w-10" />
+                </a>
+
+                <!-- Description -->
+                <div clas="flex flex-col">
+                  <a href="#">
+                    <p class="text-gray-100 text-sm font-semibold">Learn CSS Box Model in 8
+                      Minutes</p>
+                  </a>
+                  <a class="text-white text-xs mt-2 hover:text-gray-100" href="#"> Web Dev
+                    Simplified </a>
+                  <p class="text-white text-xs mt-1">241K views . 3 years ago</p>
+                </div>
+
+              </div>
+            </card>
+          </div>
+        </div>
+      </div>
+      </br>
+    </div>
+    <div class="text-center text-2xl font-extrabold py-2">
+      <span class="text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-teal-500 py-">
+
+      </span>
+    </div>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>
